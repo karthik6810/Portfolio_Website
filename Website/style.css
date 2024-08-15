@@ -1,325 +1,245 @@
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-family: "Namdhinggo", serif;
-}
-html {
-    scroll-behavior: smooth;
-  }
-  
-body{
-    background-color:#F6F5F5;
-}
-.MainContainer{
-    /* border: 2px solid green; */
-    height: 500px;
-    width: 100%;
-    background-color: #F6F5F5;
-    
-}
-#SubMainContainer{
-    /* border: 2px solid red; */
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-#SubMainContainer ul li{
-    list-style: none;
-    /* display: flex; */
-    justify-content: space-between;
-    float: left;
-    margin: 30px;
-    
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Namdhinggo', sans-serif;
+    background-color: #fff; /* White background */
+    color: #333;
 }
 
-#SubMainContainer ul li a:hover{
-  color: #3652AD;
-}
-#SubContainer2{
-    /* border: 2px solid black; */
-    height: 400px;
-    width: 100%;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
-    align-items: center;
-}
-#SubContainer2 h1{
-    font-size: 80px;
-}
-#SubContainer2 p{
-    font-size: 30px;
-}
-#SubMainContainer ul li a{
+a {
     text-decoration: none;
-    /* margin: 10px; */
-    color: black;
-    font-size: 25px;
-    box-shadow: 0 6px 6px rgba(177, 130, 227, 0.6);;
+    color: inherit;
 }
-#Card1{
-    /* border: 2px solid red; */
-    height: 400px;
-    width: 40%;
-    padding: 10%;
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-#Card1 a{
-    height: 10px;
-    background-color: black;
-    color: white;
-    font-size: 20px;
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation Styles */
+nav.MainContainer {
+    background-color: #f7f7f7; /* Light grey background for the nav */
+    padding: 20px;
+}
+
+#SubMainContainer ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#SubMainContainer ul li {
+    margin: 0 20px; /* Increased margin */
+}
+
+#SubMainContainer ul li a {
+    color: #ffcc00; /* Yellow color for nav links */
+    font-size: 20px; /* Increased font size */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#SubMainContainer ul li a:hover {
+    color: #ff9900; /* Darker yellow on hover */
+}
+
+/* Home Section Styles */
+#SubContainer2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffcc00; /* Yellow background */
+}
+
+#Card1 {
+    color: #fff; /* White text */
+}
+
+#Card1 h1 {
+    font-size: 4rem; /* Larger font size */
+    margin: 0;
+}
+
+#Card1 h1 span {
+    color: #333;
+}
+
+#Card1 p {
+    font-size: 2rem; /* Larger font size */
+}
+
+button {
+    padding: 15px 30px; /* Larger padding */
+    background-color: #333;
+    color: #fff;
+    border: none;
     border-radius: 5px;
-    margin-top: 100px;
-    text-decoration: none;
-}
-#Card1 h1{
-    color: black;
-}
-#Card1 p{
-    color: black;
-}
-#Card1 span{
-    color: #0C359E;
-}
-#Card1 button a{
-   background-color: #0C359E;
-   color: wheat;
-   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);;
-}
-#Card2{
-    /* border: 2px solid  #0C359E; */
-    /* border-radius: 20px;
-    height: 400px;
-    width: 40%; */
-    height: 350px;
-    width: 200px;
-    /* box-shadow: 2px 2px 2px; */
-}
-.men {
-    height: 90%;
-}
-#Card2 img{
-    height: 350px;
-    width: 400px;
-    position: absolute;
-    right: 100px;
-}
-#EducationContainer{
-    /* border: 2px solid blue; */
-    height: 400px;
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    cursor: pointer;
+    font-size: 1.2rem; /* Increased font size */
 }
 
-.degree{
-    /* border: 2px solid red; */
-    height: 300px;
-    width: 30%;
+button a {
+    color: #fff;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Education Section Styles */
+#EducationContainer {
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    /* gap: 15px; */
+    flex-wrap: wrap;
+    justify-content: space-around; /* Align items horizontally */
 }
-.degree ul{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    font-size: 18px; 
+
+.degree, .Diploma, .HighSchool {
+    flex: 1;
+    min-width: 300px; /* Minimum width for each card */
+    max-width: 300px; /* Maximum width for each card */
+    margin: 15px; /* Increased margin */
+    padding: 20px;
+    background-color: #f7f7f7; /* Background color for the cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.degree img{
-    height: 50px;
-    width: 100px;
+
+.degree h1, .Diploma h1, .HighSchool h1 {
+    font-size: 2rem; /* Increased font size */
+    color: #333;
 }
-.degree ul li {
+
+.degree ul, .Diploma ul, .HighSchool ul {
     list-style: none;
+    padding: 0;
+}
 
+.degree li, .Diploma li, .HighSchool li {
+    font-size: 1.3rem; /* Larger font size */
+    margin: 10px 0;
 }
-.degree h1{
-    color:#3652AD ;
+
+.degree i, .Diploma i, .HighSchool i {
+    color: #f7c33b; /* Yellow color for icons */
 }
-.Diploma{
-    /* border: 2px solid red; */
-    height: 300px;
-    width: 30%;
+
+/* Skills Section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Align items horizontally */
+    padding: 20px;
 }
-.Diploma img{
-    height: 50px;
-    width: 100px;
+
+.skills div {
+    flex: 1;
+    min-width: 300px; /* Minimum width for each skill card */
+    max-width: 300px; /* Maximum width for each skill card */
+    margin: 15px; /* Increased margin */
+    padding: 20px;
+    background-color: #f7f7f7; /* Background color for the cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.Diploma ul li{
+
+.skills h1 {
+    font-size: 2rem; /* Increased font size */
+    color: #333;
+}
+
+.skills ul {
     list-style: none;
-
+    padding: 0;
 }
-.Diploma ul{
+
+.skills li {
+    font-size: 1.3rem; /* Larger font size */
+    margin: 10px 0;
+}
+
+.skills i {
+    color: #f7c33b; /* Yellow color for icons */
+}
+
+/* Projects Section Styles */
+#ProjectsDetails {
+    padding: 40px;
+    background-color: #fff; /* White background */
+}
+
+#ProjectsDetails h1 {
+    color: #ffcc00; /* Yellow heading */
+    font-size: 2.5rem; /* Larger font size */
+    margin-bottom: 20px;
+}
+
+.ProjectsDetails h2 {
+    color: #333;
+    font-size: 1.8rem; /* Larger font size */
+    margin-bottom: 10px;
+}
+
+.ProjectsDetails p {
+    font-size: 1.2rem; /* Larger font size */
+    color: #666;
+}
+
+/* Certificates Section Styles */
+#Certificates {
+    padding: 40px;
+    background-color: #f7f7f7; /* Background color for the cards */
+}
+
+#Certificates h1 {
+    color: #ffcc00; /* Yellow heading */
+    font-size: 2.5rem; /* Larger font size */
+    margin-bottom: 20px;
+}
+
+#Certificates ul li {
+    font-size: 1.3rem; /* Larger font size */
+    margin-bottom: 10px;
+}
+
+#Certificates a {
+    color: #333;
+}
+
+#Certificates a:hover {
+    color: #ff9900; /* Darker yellow for links */
+}
+
+/* Footer Styles */
+footer#socialConnect {
+    padding: 20px;
+    background-color: #333; /* Dark background */
+    color: #fff;
+    text-align: center;
+}
+
+footer#socialConnect ul {
     display: flex;
-    flex-direction: column;
-    gap: 15px; 
-    font-size:18px ;
-}
-.Diploma h1{
-    color:#3652AD ;
-}
-.HighSchool{
-    /* border: 2px solid red; */
-    height: 300px;
-    width: 30%;
+    justify-content: center;
+    padding: 0;
 }
 
-.HighSchool img{
-    height: 50px;
-    width: 100px;
-}
-.HighSchool ul li{
-    list-style: none;
-
-}
-.HighSchool ul{
-    display: flex;
-    flex-direction: column;
-    gap: 15px; 
-    font-size: 18px; 
-}
-.HighSchool h1{
-    color:#3652AD ;
-}
-.skills{
-    /* border: 2px solid green; */
-    height: 300px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+footer#socialConnect ul li {
+    margin: 0 15px; /* Increased margin */
 }
 
-#Sskills{
-    /* border: 2px solid orange; */
-    height: 200px;
-    width: 30%;
-
-}
-#Sskills ul h1{
-    color: #3652AD;
-}
-#Sskills ul li{
-    list-style: none ;
-    font-size: 20px;
-}
-#Fskills{
-    /* border: 2px solid orange; */
-    height: 200px;
-    width: 30%;
-}
-#Fskills ul h1{
-    color: #3652AD;
-}
-#Fskills ul li{
-    list-style: none ;
-    font-size: 20px;
-}
-#Pskills{
-    /* border: 2px solid orange; */
-    height: 200px;
-    width: 30%;
-}
-#Pskills ul h1{
-    color: #3652AD;
-}
-#Pskills ul li{
-    list-style: none ;
-    font-size: 20px;
-}
-#Project{
-    /* border: 1px solid gold; */
-    height: 400px;
-    width: 100%;
-}
-#ProjectsDetails h1{
-    padding-left: 30px;
-}
-#ProjectsDetails h2{
-    color:#3652AD ;
-}
-#Project1{
-    /* border: 2px solid purple; */
-    height:100px;
-    width: 100%;
-    padding-left: 30px;
-}
-#Project1 p{
-    font-size: 20px;
-}
-#Project2{
-    /* border: 2px solid green; */
-    height: 100px;
-    width: 100%;
-    padding-left: 30px;
-}
-#Project2 p{
-    font-size: 20px;
+footer#socialConnect ul li a {
+    color: #fff; /* White color */
+    font-size: 1.8rem; /* Larger font size */
 }
 
-#Certificates{
-    /* border: 2px solid green; */
-    height: 200px;
-    width: 100%;
-    gap: 200px;
+footer#socialConnect ul li a:hover {
+    color: #ffcc00; /* Yellow icons */
 }
-#Certificates h1{
-    color: black;
-    padding-left:30px ;
-}
-#Certificates ul li a{
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    /* color: crimson; */
-    /* background-color: black; */
-}
-#Certificates ul li i {
-    padding-left:30px ;
-}
-#Certificates ul li{
-    font-size: 20px;
-}
-#socialConnect{
-    /* border: 2px solid red; */
-    height: 200px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-   
-}
-#socialConnect ul{
-    /* border: 2px solid green; */
-    height: 200px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
-}
-#socialConnect ul li a i{
-    font-size: 50px;
-    color: #3652AD;
-}
-/* @media screen and (max-width: 600px) {
-    #SubMainContainer.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    #SubMainContainer.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  } */
-  
