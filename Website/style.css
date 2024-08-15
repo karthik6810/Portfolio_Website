@@ -56,10 +56,12 @@ nav.MainContainer {
     align-items: center;
     padding: 40px;
     background-color: #ffcc00; /* Yellow background */
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
 }
 
 #Card1 {
     color: #fff; /* White text */
+    text-align: center;
 }
 
 #Card1 h1 {
@@ -242,4 +244,74 @@ footer#socialConnect ul li a {
 
 footer#socialConnect ul li a:hover {
     color: #ffcc00; /* Yellow icons */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* For tablets and smaller screens */
+    #SubMainContainer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #SubMainContainer ul li {
+        margin: 10px 0;
+    }
+
+    #SubContainer2 {
+        flex-direction: column;
+    }
+
+    #Card1 {
+        margin-bottom: 20px;
+    }
+
+    #EducationContainer, .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .degree, .Diploma, .HighSchool, .skills div {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    /* For mobile screens */
+    #Card1 h1 {
+        font-size: 2.5rem;
+    }
+
+    #Card1 p {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    #ProjectsDetails h1, #Certificates h1 {
+        font-size: 2rem;
+    }
+
+    .ProjectsDetails h2 {
+        font-size: 1.5rem;
+    }
+
+    .ProjectsDetails p {
+        font-size: 1rem;
+    }
+
+    #Certificates ul li {
+        font-size: 1.1rem;
+    }
+
+    footer#socialConnect ul {
+        flex-direction: column;
+    }
+
+    footer#socialConnect ul li {
+        margin: 10px 0;
+    }
 }
